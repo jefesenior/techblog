@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    background-color: rgb(1, 29, 29);
+    font-family: 'Lucida Sans', 'Lucida Grande', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    text-align:center;
+    
+}
+
+/* Container styles */
+.container {
+    width: 75%;
+    border-collapse: separate;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #000;
+}
+
+/* Navigation styles */
+.nav {
+    width: 12%;
+    padding: 20px;
+    border-right: 2px solid #000;
+    text-align: center;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    margin-bottom: 10px;
+}
+
+.nav-button {
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+}
+
+.nav-button:hover {
+    background-color: #555;
+}
+
+/* Body styles */
+.body {
+    padding: 20px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social-button {
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.social-button:hover {
+    background-color: #555;
+}
+
+/* Contact form styles */
+.contact-form {
+    background-color: #333;
+    padding: 50px;
+    border-radius: 20px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form input[type="submit"] {
+    display: block;
+    margin-bottom: 10px;
+    width: fit-content;
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #222;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input[type="submit"] {
+    cursor: pointer;
+    background-color: #555;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #777;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 2px solid #000;
+}
