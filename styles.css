@@ -10,8 +10,34 @@ body {
     background-color: rgb(1, 29, 29);
     font-family: 'Lucida Sans', 'Lucida Grande', Geneva, Verdana, sans-serif;
     color: white;
+}
+
+.nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-button {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: #555;
 }
 
 #content-container {
@@ -24,30 +50,14 @@ body {
     text-align: center;
 }
 
-.nav {
+.contact-form {
     margin-top: 20px;
-    text-align: center;
 }
 
-.nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-.nav-button {
-    text-decoration: none;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-.nav-button:hover {
-    background-color: #555;
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form input[type="submit"] {
+    display: block;
+    margin-bottom: 10px;
 }
