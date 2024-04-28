@@ -10,6 +10,11 @@ body {
     background-color: #222; /* Dark background */
     font-family: 'Lucida Sans', 'Lucida Grande', Geneva, Verdana, sans-serif;
     color: #fff; /* White text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: space-between; /* Evenly distribute content vertically */
+    min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
 }
 
 /* Header */
@@ -17,6 +22,7 @@ body {
     text-align: center;
     padding: 20px 0;
     border-bottom: 2px solid #000;
+    width: 100%; /* Make header fill the width of the viewport */
 }
 
 /* Navigation */
@@ -52,6 +58,8 @@ body {
 /* Body */
 .body {
     padding: 20px;
+    width: 100%; /* Make body fill the width of the viewport */
+    text-align: center; /* Center text within the body */
 }
 
 /* Contact form */
@@ -108,4 +116,5 @@ body {
     text-align: center;
     padding: 20px 0;
     border-top: 2px solid #000;
+    width: 100%; /* Make footer fill the width of the viewport */
 }
