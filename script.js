@@ -18,3 +18,28 @@ $(document).ready(function() {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var contactForm = document.getElementById('contactForm');
+    var responseDiv = document.getElementById('response');
+
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get form data
+        var formData = new FormData(contactForm);
+
+        // Send form data to server using AJAX
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'process_form.php'); // Change 'process_form.php' to your server-side script
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                responseDiv.innerHTML = xhr.responseText;
+                contactForm.reset(); // Reset the form
+            } else {
+                responseDiv.innerHTML = 'Error: ' + xhr.status;
+            }
+        };
+        xhr.send(new URLSearchParams(formData)); // Send form data
+    });
+});

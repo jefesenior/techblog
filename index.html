@@ -5,18 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jefesenior's Page</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-    <!-- Navigation links -->
+    <header class="header">
+        <h1>Welcome to Jefesenior's Page</h1>
+    </header>
+
     <nav class="nav">
         <ul>
-            <li><a href="index.html" class="nav-button">Home</a></li>
+            <li><a href="home.html" class="nav-button">Home</a></li>
+            <li><a href="blog.html" class="nav-button">Blog</a></li>
             <li><a href="about.html" class="nav-button">About Me</a></li>
-            <li><a href="contact.html" class="nav-button">Contact Me</a></li>
+            <li><a href="contact-form.html" class="nav-button">Contact Me</a></li>
         </ul>
     </nav>
 
-    <!-- WordPress blog embedded using iframe -->
-    <iframe src="https://your-wordpress-blog.com" width="100%" height="800" frameborder="0"></iframe>
+    <main class="body">
+        <div id="content-container">
+            <!-- Content will be loaded here -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        &copy; 2024 Jefesenior. All rights reserved.
+    </footer>
 </body>
 </html>
